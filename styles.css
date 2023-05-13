@@ -1,0 +1,71 @@
+body {
+	background-color: #171c26;	/* Fondo morado oscuro */
+	color: #ffffff; /* Texto en blanco */
+	font-family: Arial, sans-serif; /* Fuente de texto */
+}
+nav {
+	background-color: #171c26; /* Fondo negro para la barra de navegación */
+	padding: 10px; /* Espacio entre los elementos de la barra de navegación */
+	border-top: 4px solid #4b0082; /* Borde superior morado oscuro */
+	border-bottom: 4px solid #4b0082; /* Borde inferior morado oscuro */
+}
+nav {
+	color: #ffffff; /* Texto en blanco para los enlaces de navegación */
+	text-decoration: none; /* Sin subrayado para los enlaces de navegación */
+	margin-right: 20px; /* Espacio entre los enlaces de navegación */
+	border: 2px solid #4b0082; /* Borde morado oscuro */
+	padding: 5px; /* Espacio dentro de los enlaces de navegación */
+	border-radius: 10px; /* Bordes redondeados */
+	transition: all 0.3s ease; /* Efecto de transición */
+}
+nav :hover {
+	background-color: #4b0082; /* Fondo morado oscuro cuando se pasa el cursor */
+	color: #ffffff; /* Texto en blanco cuando se pasa el cursor */
+}
+h1 {
+	border-left: 4px solid #4b0082; /* Borde izquierdo morado oscuro */
+	padding-left: 10px; /* Espacio entre el borde y el texto */
+	font-size: 36px; /* Tamaño de fuente */
+}
+p {
+	margin: 20px 0; /* Espacio antes y después del párrafo */
+}
+p {
+	text-align: left;
+}
+.box1 {
+	display: inline-block;
+	margin: 8px;
+	margin-right: 30px;
+	padding: 10px;
+	background-color: #4b0082;
+	width: 200px;
+	#border: solid rgb(47, 240, 47) 5px;
+	text-align: center;
+}
+
+.box1:hover {
+	cursor: pointer;
+	background-color:#6610f2;	
+}
+
+.title:hover {
+	text-decoration: underline;
+	text-decoration-color: greenyellow;
+	text-decoration-thickness: 5px;
+}
+
+.writeups {
+	margin-right: 20px;
+	margin-left: 50px;
+	padding-left: 20px;
+	padding-right: 15px;
+	border: solid blue 5px;
+}
+
+.imgw {
+	width: 100;
+	padding: 20px
+	;
+}
+

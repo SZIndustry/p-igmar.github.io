@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="styles.css"> 
+    <title> Precious</title>
+</head>
+<body>
+    <h1> Precious </h1> 
+    <div class="writeups">
+        <p> 
+            Para comenzar nos conectamos a la VPN de HackTheBox usando openvpn 
+            desde nuestra terminal en cualquier distribucion desde la que eestemos 
+            trabajando.
+            <pre>
+                <code> 
+                $ sudo openvpn example.ovpn
+                </code>
+            </pre> 
+            Despues de conectarse al la vpn encendemos la maquina en la pagina HTB. <br></nr>
+            Enpezamos con la enumaracion de puertos usando nmap.
+            <pre>
+                <code>
+                $ nmap {TARGET_IP} -p- --min-rate 5000 --open -sS -n -Pn
+                </code>
+            </pre>
+            Con esto pidemos ver que los soguientes puetos estan abiertos <br>
+            <img class="imgw" src="image.png"> 
+            <br> 
+            Volvemos hacer un escaneo con nmap, pero esta vez usando los parametros para 
+            ver que servicios se estan ejecuntando en los puertos abiertos.
+            <pre>
+                <code>
+                $ nmap {TARGET_IP} -sCV -p 
+                </code>
+            </pre>
+            El escaneo nos arroja lo siguiente:
+            <br>
+            <img class="imgw" src="imagen2.pgn"> 
+        </p>
+    </div>   
+</body>
+</html>
