@@ -3,7 +3,7 @@ body {
 	color: #ffffff; /* Texto en blanco */
 	font-family: Arial, sans-serif; /* Fuente de texto */
 }
-nav {
+nav a{
 	background-color: #171c26; /* Fondo negro para la barra de navegación */
 	padding: 10px; /* Espacio entre los elementos de la barra de navegación */
 	border-top: 4px solid #4b0082; /* Borde superior morado oscuro */
@@ -18,7 +18,7 @@ nav {
 	border-radius: 10px; /* Bordes redondeados */
 	transition: all 0.3s ease; /* Efecto de transición */
 }
-nav :hover {
+nav a:hover {
 	background-color: #4b0082; /* Fondo morado oscuro cuando se pasa el cursor */
 	color: #ffffff; /* Texto en blanco cuando se pasa el cursor */
 }
