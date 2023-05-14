@@ -22,18 +22,7 @@ nav a:hover {
 	background-color: #4b0082; /* Fondo morado oscuro cuando se pasa el cursor */
 	color: #ffffff; /* Texto en blanco cuando se pasa el cursor */
 }
-a {
-	background-color: #4b0082; /* Fondo morado oscuro cuando se pasa el cursor */
-	color: #ffffff; /* Texto en blanco cuando se pasa el cursor */
-	color: #ffffff; /* Texto en blanco para los enlaces de navegación */
-	text-decoration: none; /* Sin subrayado para los enlaces de navegación */
-	margin-right: 20px; /* Espacio entre los enlaces de navegación */
-	border: 2px solid #4b0082; /* Borde morado oscuro */
-	padding: 5px; /* Espacio dentro de los enlaces de navegación */
-	border-radius: 10px; /* Bordes redondeados */
-	transition: all 0.3s ease; /* Efecto de transición */
-	
-}
+
 h1 {
 	border-left: 4px solid #4b0082; /* Borde izquierdo morado oscuro */
 	padding-left: 10px; /* Espacio entre el borde y el texto */
