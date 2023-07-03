@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEART</title>
+</head>
+<body>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+}
+.heart{
+    height: 200px;
+    width: 200px;
+    background-color: #1bb520;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: -20px 20px 300px #f20044;
+    animation: palpitar 0.5s linear infinite alternate;
+}
+
+.content{
+    position: fixed;
+    text-align: center;
+}
+h4{
+    color: white;
+
+}
+
+/* @keyframes palpitar{
+    0%{transform: rotate(45deg) scale(1.10);}
+    80%{transform: rotate(45deg) scale(1.0);}
+    100%{transform: rotate(45deg) scale(0.8);}
+} */
+.heart::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: #1bb520;
+    right: 50%;
+    border-radius: 50%;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: #1bb520;
+    top: -50%;
+    border-radius: 50%;
+}
+
+    </style>
+    <div class="heart"></div>
+    <div class="content"><h4>El tenerte a mi lado <br>
+        me hace la persona mas feliz <br>
+        eres con quien quiero compartir todo <br>
+        Todo por ti porque tu enserio.. <br> </h4>
+            <h2 style="color: blue;"> Me gustas </h2>
+        <button style="background-color: green;" onclick="window.location.href='forth.html'"> ... </button>
+    </div>
+
+</body>
+</html>

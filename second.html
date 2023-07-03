@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEART</title>
+</head>
+<body>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+.heart{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: -20px 20px 300px #f20044;
+    animation: palpitar 0.5s linear infinite alternate;
+}
+
+.content{
+    position: fixed;
+    text-align: center;
+}
+h4{
+    color: white;
+
+}
+
+/* keyframes palpitar{
+    0%{transform: rotate(45deg) scale(1.10);}
+    80%{transform: rotate(45deg) scale(1.0);}
+    100%{transform: rotate(45deg) scale(0.8);}
+} */ 
+.heart::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: red;
+    right: 50%;
+    border-radius: 50%;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: red;
+    top: -50%;
+    border-radius: 50%;
+}
+
+    </style>
+    <div class="heart"></div>
+    <div class="content"><h4>Lo mucho que me encantas..<br>lo mucho que me gustas <br>
+        Lo mal que me pones con solo mirarme <br>
+        Como no puedo dejar de pensar en ti <br>
+        Y todo esto porque <br> </h4>
+            <h2 style="color: cyan;"> Te adoro </h2>
+        <button style="background-color: red;" onclick="window.location.href='third.html'"> ... </button>
+    </div>
+
+</body>
+</html>

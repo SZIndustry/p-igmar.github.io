@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEART</title>
+</head>
+<body>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:cornflowerblue ;
+}
+.heart{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: -20px 20px 300px #f20044;
+    animation: palpitar 0.5s linear infinite alternate;
+}
+
+.content{
+    position: fixed;
+    text-align: center;
+}
+h4{
+    color: white;
+
+}
+
+/* @keyframes palpitar{
+    0%{transform: rotate(45deg) scale(1.10);}
+    80%{transform: rotate(45deg) scale(1.0);}
+    100%{transform: rotate(45deg) scale(0.8);}
+} */
+.heart::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: blue;
+    right: 50%;
+    border-radius: 50%;
+}
+.heart::after{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: blue;
+    top: -50%;
+    border-radius: 50%;
+}
+
+    </style>
+    <div class="heart"></div>
+    <div class="content"><h4><br>Es una tortura no estar junto a ti <br>
+        no existen motivos por los cuales <br>
+        te dejaria ir tan facil <br>
+        Eres mi persona favorita y la unica  <br>
+        que me trae asi de tonto <br>
+        Tu </h4>
+            <h2 style="color: cyan;"> Me enloqueces </h2>
+        <button style="background-color: skyblue;" onclick="window.location.href='six.html'"> ... </button>
+    </div>
+
+</body>
+</html>
